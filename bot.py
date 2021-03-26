@@ -9,7 +9,9 @@ class CovidBot:
         self.id = id
         self.fullname = fullname
 
-        self.driver = webdriver.Chrome('./chromedriver')
+        # Download chromedriver from https://chromedriver.chromium.org/
+        self.driver = webdriver.Chrome('./chromedriver') 
+        
         self.driver.get('<<put form website>>')
         
         self.runCovidBot()
